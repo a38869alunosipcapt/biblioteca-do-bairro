@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="src.js"></script>
     <script>
-        function showAlert() {
-            alert('Ola');
-        }
-        </script>
-
+    function showAlert() {
+        alert('Ola'.concat(document.getElementById('myInput').value));
+    }
+    </script>
+ 
 </head>
 <body>
-    <button onclick="alert('Ola')">Clique aqui</button>
     <button onclick="showAlert()">Clique aqui</button>
     <input type="text" id="myInput" placeholder="Digite algo">
+   
 </body>
 </html>
- 
